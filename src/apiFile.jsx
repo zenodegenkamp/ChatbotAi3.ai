@@ -21,9 +21,9 @@ export default async function FetchChatBot(conversationStr) {
     body: conversationStr
   })
   const data = await response.json()
-  console.log(data)
+  console.log("APIFILE" + data)
 
-  
+  return data
   
   // try {
   //   const completion = await openai.completions.create({
