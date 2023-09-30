@@ -17,13 +17,11 @@ const handler = async (event) => {
           temperature: 0, 
           stop: ['\n', '->']
 
-
-
     })
    
     return {
       statusCode: 200,
-      body: JSON.stringify({ reply: completion }),
+      body: JSON.stringify({ reply: completion.choices[0].text }),
       
     }
   } catch (error) {

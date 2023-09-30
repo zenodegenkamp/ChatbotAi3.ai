@@ -27,6 +27,7 @@ export default function Demo(){
         event.preventDefault();
 
         const response = await FetchChatBot(conversationStr)
+        console.log("response" + response)
         
         setMessages(
             [...messages, 
@@ -40,7 +41,6 @@ export default function Demo(){
 
     }
     
-    console.log(conversationStr)
 
     return (
         
