@@ -27,16 +27,16 @@ export default function Demo(){
         event.preventDefault();
 
         const response = await FetchChatBot(conversationStr)
-        console.log("response" + response.reply)
+       
         
         setMessages(
             [...messages, 
             {text: document.getElementById('form-input').value,
             isBot: false}, 
-            {text: response, isBot: true}
+            {text: response.reply, isBot: true}
         ])
 
-        setConversationStr(oldStr => oldStr + `${response} \n`)
+        setConversationStr(oldStr => oldStr + `${response.reply} \n`)
         document.getElementById('form-input').value = ""
 
     }
