@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { process } from '/env';
+// import { process } from '/env';
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
