@@ -27,7 +27,7 @@ export default function Demo(){
         event.preventDefault();
 
         const response = await FetchChatBot(conversationStr)
-        console.log("response" + response)
+        console.log("response" + response.reply)
         
         setMessages(
             [...messages, 
