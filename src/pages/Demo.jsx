@@ -28,7 +28,7 @@ export default function Demo(){
 
         const response = await FetchChatBot(conversationStr)
        
-        
+    
         setMessages(
             [...messages, 
             {text: document.getElementById('form-input').value,
@@ -38,9 +38,8 @@ export default function Demo(){
 
         setConversationStr(oldStr => oldStr + `${response.reply} \n`)
         document.getElementById('form-input').value = ""
-
     }
-    
+
 
     return (
         

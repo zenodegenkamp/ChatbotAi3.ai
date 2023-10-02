@@ -45,7 +45,7 @@ export default function Header() {
               <div className="navbar__menu_container_links">
                 <Menu />
                 <div className="navbar__menu_container_links_demo_btn">
-                  <Link to="/demo" className="navbar__demo_button">Go to demo</Link>
+                  <Link to="/demo" className="navbar__demo_button">Demo</Link>
                 </div>
               </div>
             </div>
